@@ -6,8 +6,9 @@ const wordCount = sentence.split(' ').length
 
 const replaceWord = sentence.replace(oldWord, newWord);
 
-const checkSubstring = sentence.includes(replaceWord)
+const checkSubstring = replaceWord.includes(subString)
 
 const ans  = `Sentence: ${sentence}<br>Number of words in this sentence: ${wordCount}<br>After replacement of words: ${replaceWord}<br>Is the word in this sentence? ${checkSubstring}`
 
 document.getElementById('out').innerHTML = ans
+
